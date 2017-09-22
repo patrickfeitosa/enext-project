@@ -111,7 +111,7 @@
 
 #search{
 	border-style: none;	
-	width: 90%;
+	width: 85%;
 }
 
 #information{	
@@ -437,29 +437,54 @@ label[for="bt_menu"]{
 
 	label[for="bt_menu"]{
 		display: block;		
-		margin-top: -125px;
-		margin-bottom: 20px;
+	}
+
+	h1{
+		text-align: center;
 	}
 
 	.col-4{
 		width: 100%;
 	}
 
-	.logo{
-		margin-left: 100px;
-		margin-top: 0;
+	.col-5{
+		width: 18%;		
 	}
 
-	.search{
-		margin-left: -300%;
+	header .col-5{
+		width: 50%;		
+	}
+
+	#searchbox{
+		margin-top: -100%;
+		margin-left: 15%;
+		width: 80%;
+	}
+
+	#logobox{
+		margin-left: 15%;
+		margin-top: -60px;
 	}
 
 	#information{
-		display: none;
+		text-align: right;
+		margin-top: -30px;
+		margin-left:0;
+		color: #8c8c8c;		
+		background-color: #d9d9d9;
+		font-size: 20px;
+		height: 30px;
 	}
 
-	#informations{
-		display: none;
+	#informations{		
+		height: 30px;
+		padding-left: 5px;
+		width: 104%;
+		margin-top: -40px;			
+		margin-left: 100%;
+		color: #8c8c8c;	
+		font-size: 20px;
+		background-color: #d9d9d9;
 	}
 
 	#bt_menu:checked ~ .menu{
@@ -471,13 +496,35 @@ label[for="bt_menu"]{
 		transition: all .2s;
 	}
 
-	#bt_menu:checked ~ .logo{
-		margin-left: -300%;
+	#bt_menu:checked ~ header #searchbox{
+		margin-top: -65px;	
+		transition: all .4s;
+	}
+
+	#bt_menu:checked ~ header .search{
+		margin:0;
+		width: 100%;
+	}
+
+	#bt_menu:checked ~ header #logobox{
+		display: none;
+	}
+
+	#bt_menu:checked ~ header #bag{
+		display: none;
+	}
+
+	#bt_menu:checked ~ header #information{
+		display: none;
+	}
+
+	#bt_menu:checked ~ header #informations{
+		display: none;
 	}
 
 	#bag{
-		margin-top: -55px;
-		margin-left: 0;
+		margin-top: -95px;
+		margin-left: 50%;
 	}
 
 	#content{
@@ -486,7 +533,7 @@ label[for="bt_menu"]{
 	}
 
 	.menu{
-		margin-top: 5px;
+		margin-top: -50px;
 		margin-left: -100%;
 		transition: all .4s;
 	}
@@ -543,9 +590,5 @@ label[for="bt_menu"]{
 		margin-top: 0;
 	}
 
-	/*.col-5{
-		margin-right: auto;
-		margin-left:auto;
-		}*/
-	}
+}
 /* Fim Estilização do Menu Mobile*/
